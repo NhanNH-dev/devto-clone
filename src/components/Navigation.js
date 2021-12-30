@@ -4,13 +4,16 @@ import { BiMessageRounded } from "react-icons/bi";
 import { RiNotificationLine } from "react-icons/ri";
 import { FiSearch } from "react-icons/fi";
 
-const Navigation = () => {
+const Navigation = (props) => {
   const [showMenu, setShowMenu] = useState(false);
   const toggle = () => setShowMenu(!showMenu);
   return (
     <header className="header">
       <div className="headerContainer">
-        <div className="headerContainer__hambugerMenu"></div>
+        <div
+          className="headerContainer__hambugerMenu"
+          onClick={() => props.openMenu()}
+        ></div>
         <a href="https://dev.to" className="headerContainer__logo">
           <FaDev size="3rem" />
         </a>

@@ -42,6 +42,13 @@ button {
 ul {
   list-style: none;
 }
+.overlay {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  inset: 0;
+  z-index: 500;
+}
 .main-container {
   height: 100vh;
   width: 100%;
